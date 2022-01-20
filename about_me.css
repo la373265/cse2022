@@ -1,0 +1,124 @@
+body{
+  /* background-color: #c5ecac; */
+background: hsla(312, 91%, 96%, 1);
+
+background: linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEEAFA", endColorstr="#DEE2FF", GradientType=1 );
+
+font-family: 'Playfair Display', serif;
+
+background-size: 100% 300%;
+}
+
+.navbar{
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #faf9f9;
+  border: 5px solid #cbc0d3;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+}
+
+
+nav{
+  flex: 1;
+  padding: 60px;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::after{
+content: '';
+width: 0%;
+height: 6px;
+background: #cbc0d3;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: -55px;
+transition: 0.5s;
+}
+
+a:hover{
+  color: #cbc0d3;
+}
+
+ul li a:hover::after{
+  width: 100%;
+}
+
+.table2{
+  font-size: 20px;
+  background-color: #dee2ff;
+  border: 5px solid #babed6;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+  width: 79%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.title{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 25px;
+  border: 5px solid #d6babe;
+  box-shadow: 2px 2px 2px black;
+}
+
+.headshot{
+  flex-basis: 30%;
+  /* padding-right: 100px; */
+  padding-bottom: 25px;
+}
+
+.demographics{
+font-size: 20px;
+background-color: #feeafa;
+border: 5px solid #d6babe;
+box-shadow: 2px 2px 2px black;
+border-radius: 25px;
+width: 30%;
+display: flex;
+padding: 10px;
+margin-bottom: 50px;
+/* break */
+/* padding-left: 20px; */
+}
+
+#CSE{
+  padding: 10px;
+}

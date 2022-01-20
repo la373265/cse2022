@@ -1,0 +1,217 @@
+body{
+background: hsla(312, 91%, 96%, 1);
+
+background: linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEEAFA", endColorstr="#DEE2FF", GradientType=1 );
+
+ font-family: 'Playfair Display', serif;
+}
+
+.title{
+  text-align: center;
+}
+
+.table{
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.container1{
+    position: relative;
+    border-radius: 88px;
+}
+
+.GUIImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 5px solid #d6babe;
+  border-radius: 88px;
+  padding: 5px;
+  margin-bottom: 25px;
+  /* break */
+  opacity: 1;
+  height: auto;
+  transition: .05s ease;
+  backface-visibility: hidden;
+}
+
+.middle1{
+  transition: .05s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .GUIImg {
+  opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: #faf9f9;
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: 5px solid #cbc0d3;
+  border-radius: 88px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.container2{
+  position: relative;
+  border-radius: 88px;
+}
+
+.SpectrumV{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 5px solid #babed6;
+  border-radius: 88px;
+  padding: 5px;
+  margin-bottom: 25px;
+  /* break */
+  opacity: 1;
+  height: auto;
+  transition: .05s ease;
+  backface-visibility: hidden;
+}
+
+.middle2{
+  transition: .05s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container2:hover .SpectrumV{
+  opacity: 0.3;
+}
+
+.container2:hover .middle2{
+  opacity: 1;
+}
+
+.text2{
+  background-color: #faf9f9;
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: 5px solid #cbc0d3;
+  border-radius: 88px;
+  box-shadow: 2px 2px 2px black;
+}
+
+/* img:hover {
+  box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+} */
+
+.navbar{
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #faf9f9;
+  border: 5px solid #cbc0d3;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+}
+
+nav{
+  flex: 1;
+  padding: 60px;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::after{
+content: '';
+width: 0%;
+height: 5px;
+background: #cbc0d3;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: -55px;
+transition: 0.5s;
+}
+
+.GUITitle a:hover{
+  color: #d6babe;
+}
+
+.SpectrumVTitle a:hover{
+  color: #babed6;
+}
+
+a:hover{
+  color: #cbc0d3;
+}
+
+a{
+  color: black;
+}
+
+ul li a:hover::after{
+  width: 100%;
+}
+
+#GUIText{
+  font-size: 20px;
+  background-color: #feeafa;
+  border: 5px solid #d6babe;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+  width: 79%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#SpectrumVText{
+  font-size: 20px;
+  background-color: #dee2ff;
+  border: 5px solid #babed6;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+  width: 79%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}

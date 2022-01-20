@@ -1,0 +1,97 @@
+body{
+  background: hsla(312, 91%, 96%, 1);
+
+background: linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 91%, 96%, 1) 0%, hsla(233, 100%, 94%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEEAFA", endColorstr="#DEE2FF", GradientType=1 );
+
+background-size: 100% 500%;
+
+font-family: 'Playfair Display', serif;
+}
+
+.navbar{
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #faf9f9;
+  border: 5px solid #cbc0d3;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 25px;
+}
+
+nav{
+  flex: 1;
+  padding: 60px;
+  text-align: right;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0 10px;
+  position: relative;
+}
+
+ul li a::after{
+content: '';
+width: 0%;
+height: 5px;
+background: #cbc0d3;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: -55px;
+transition: 0.5s;
+}
+
+a:hover{
+  color: #cbc0d3;
+}
+
+ul li a:hover::after{
+  width: 100%;
+}
+
+.content{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  color: black;
+  margin: auto;
+  padding: auto;
+  display: block;
+  align-items: center;
+  background-color: #feeafa;
+  border: 5px solid #d6babe;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px black;
+  font-size: 20px;
+  width: 95%;
+}
+
+#Email{
+  color: #d6babe;
+}
+
+.logo2{
+margin: 25px 10px 50px 10px;
+border-radius: 25px;
+border: 5px solid #d6babe;
+box-shadow: 2px 2px 2px black;
+}
